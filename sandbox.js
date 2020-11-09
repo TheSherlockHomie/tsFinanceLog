@@ -5,3 +5,16 @@ console.log(inputs);
 inputs.forEach(function (input) {
     console.log(input);
 });
+var circumference = function (radius) {
+    return 2 * radius * Math.PI;
+};
+console.log(circumference(2.5));
+var mixed = ["aa", 10, "bb", 4];
+mixed.push("3");
+mixed = ["3", "human", 32];
+var randomObject = {
+    type: "yay?",
+    name: "not applicable",
+    color: false
+};
+console.log(randomObject);
