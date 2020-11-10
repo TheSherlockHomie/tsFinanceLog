@@ -8,7 +8,7 @@ inputs.forEach((input) => {
 	console.log(input);
 });
 
-let circumference = (radius: number) => {
+let circumference = (radius: number): number => {
 	return 2 * radius * Math.PI;
 };
 console.log(circumference(2.5));
