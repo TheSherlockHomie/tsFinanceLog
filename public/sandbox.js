@@ -19,3 +19,8 @@ var randomObject = {
     color: false,
 };
 console.log(randomObject);
+var greet = function (name) {
+    console.log("Hello, " + name + "!");
+};
+greet("KK");
+greet(12);

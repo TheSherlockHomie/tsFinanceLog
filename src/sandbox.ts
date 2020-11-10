@@ -27,3 +27,12 @@ let randomObject: {
 	color: false,
 };
 console.log(randomObject);
+
+//set up a type alias
+type stringOrNum = string | number;
+
+const greet = (name: stringOrNum): void => {
+	console.log(`Hello, ${name}!`);
+};
+greet(`KK`);
+greet(12);
