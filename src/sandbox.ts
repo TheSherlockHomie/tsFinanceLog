@@ -36,3 +36,15 @@ const greet = (name: stringOrNum): void => {
 };
 greet(`KK`);
 greet(12);
+
+//Function signature (prototype in C++ speak)
+let arithmetic: (a: number, b: number, c: string) => number;
+
+//Now actually define the function
+arithmetic = (a: number, b: number, operation: string) => {
+	if (operation === "add") {
+		return a + b;
+	} else {
+		return a - b;
+	}
+};

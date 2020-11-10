@@ -24,3 +24,14 @@ var greet = function (name) {
 };
 greet("KK");
 greet(12);
+//Function signature (prototype in C++ speak)
+var arithmetic;
+//Now actually define the function
+arithmetic = function (a, b, operation) {
+    if (operation === "add") {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
