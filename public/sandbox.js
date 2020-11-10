@@ -1,3 +1,4 @@
+"use strict";
 var character = "mario";
 console.log(character);
 var inputs = document.querySelectorAll("input");
@@ -15,6 +16,6 @@ mixed = ["3", "human", 32];
 var randomObject = {
     type: "yay?",
     name: "not applicable",
-    color: false
+    color: false,
 };
 console.log(randomObject);
