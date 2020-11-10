@@ -1,4 +1,4 @@
-const character = `mario`;
+const character: string = `mario`;
 console.log(character);
 
 const inputs = document.querySelectorAll(`input`);
@@ -13,11 +13,15 @@ let circumference = (radius: number) => {
 };
 console.log(circumference(2.5));
 
-let mixed = [`aa`, 10, `bb`, 4];
+let mixed: (string | number)[] = [`aa`, 10, `bb`, 4];
 mixed.push(`3`);
 mixed = [`3`, `human`, 32];
 
-let randomObject = {
+let randomObject: {
+	type: string;
+	name: string;
+	color: boolean;
+} = {
 	type: `yay?`,
 	name: `not applicable`,
 	color: false,
