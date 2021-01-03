@@ -1,3 +1,20 @@
+//select all teh relvant HTML elements
+const form = document.querySelector(`.new-item-form`) as HTMLFormElement;
+
+//inputs
+const type = document.querySelector(`#type`) as HTMLSelectElement;
+const tofrom = document.querySelector(`#tofrom`) as HTMLInputElement;
+const details = document.querySelector(`#details`) as HTMLInputElement;
+const amount = document.querySelector(`#amount`) as HTMLInputElement;
+
+form.addEventListener("submit", (e: Event) => {
+	e.preventDefault();
+
+	console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});
+
+// Old stuff
+/*
 const character: string = `mario`;
 console.log(character);
 
@@ -48,3 +65,4 @@ arithmetic = (a: number, b: number, operation: string) => {
 		return a - b;
 	}
 };
+*/
